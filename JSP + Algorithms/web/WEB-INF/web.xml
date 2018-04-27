@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Servlets.LoginLogoutServlet.Login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Servlets.LoginLogoutServlet.Register</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <servlet>
+        <servlet-name>BFSPageShow</servlet-name>
+        <servlet-class>Servlets.BFSServlet.BFSPageShow</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BFSPageShow</servlet-name>
+        <url-pattern>/BFSPageShow</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BFSResultShow</servlet-name>
+        <servlet-class>Servlets.BFSServlet.BFSResultShow</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BFSResultShow</servlet-name>
+        <url-pattern>/ResultShow</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>Sort</servlet-name>
+        <servlet-class>Servlets.SortingServlet.Sort</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Sort</servlet-name>
+        <url-pattern>/Sort</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
